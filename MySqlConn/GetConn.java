@@ -22,9 +22,14 @@ import static com.example.wyb.work1.R.id.username;
 public class GetConn  {
 
     //数据库哦
-    private static final String DB_URL="jdbc:mysql://23.106.151.159/Android_myNews";
+   /** private static final String DB_URL="jdbc:mysql://23.106.151.159/Android_myNews";
     private static final String user="News";
     private static final String pass="News";
+    */
+    private static final String DB_URL="jdbc:mysql://106.2.23.8/wangyibo";
+    private static final String user="mysql";
+    private static final String pass="mysql";
+
     private java.sql.Connection connection;
     private   Statement statement;
 
