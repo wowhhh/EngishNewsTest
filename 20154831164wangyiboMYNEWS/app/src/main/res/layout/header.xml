@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="我是header"
+        android:textSize="30sp"
+        android:textColor="#fde70b0b"
+        android:background="#f9777979"
+        android:gravity="top"
+
+        />
+-->
+
+
+    <!--来一手轮播你怎么说-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/header_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary">
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:background="#33000000"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/header_viewPager"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="新闻查看"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        </LinearLayout>
+</LinearLayout>

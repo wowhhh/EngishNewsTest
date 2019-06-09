@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/business_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/right_bottom_view"
+    android:orientation="vertical"
+    android:paddingTop="3dp">
+
+
+    <!--<ImageView
+        android:id="@+id/news_photo"
+        android:layout_above="@+id/news_photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/steam"/>
+-->
+    <com.example.wyb.work1.MainScreen.Home.MyImageView
+        android:id="@+id/Topnews_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/news_photo_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/Topnews_photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="18"
+
+        android:maxLines="3"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:typeface="monospace" />
+    <!--testview 此处设置了显示数目，多的话省略号-->
+
+
+</LinearLayout>

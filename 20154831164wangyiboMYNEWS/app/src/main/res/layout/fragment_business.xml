@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--想法：这个界面就不做header了,干脆加入上方的滚动图就ok的-->
+
+   <!-- <include
+        layout="@layout/header"
+
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+-->
+
+    <!--实现轮播图   viewpager显示图片 textview 显示文字 linerlayout显示小圆点-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tech_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/colorPrimary">
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:weightSum="10"
+            android:background="#33000000"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+
+                android:id="@+id/tech_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="TECHNOLOGY"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:layout_alignBottom="@id/tech_viewpager"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    //加载新闻
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Tech_DownRedresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_business"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
